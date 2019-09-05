@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Гоша](https://up.htmlacademy.ru/htmlcss/26/user/1123415).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Генералов](https://htmlacademy.ru/profile/hifull)
 
 ---
 
