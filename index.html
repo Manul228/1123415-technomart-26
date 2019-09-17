@@ -8,9 +8,11 @@
 
   <body>
     <header>
-      <h1><a href="#">Техномарт</a></h1>
+      <h1><a href="#" aria-label="Ссылка на главную">Техномарт</a></h1>
       <div>
-        <!--Форма поиска-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="text" placeholder="Поиск:" name="search" aria-label="Поисковая строка">
+        </form>
       </div>
       <ul>
         <li><a href="#">Закладки: 0</a></li>
@@ -19,15 +21,18 @@
 
       <a href="#">Оформить заказ</a>
 
+
       <p>
         Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта
       </p>
 
-      <a href="#">+7 (812) 555-05-55</a>
+      <div>
+        <a href="#" aria-label="Контактный телефон">+7 (812) 555-05-55</a>
 
-      <p>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
+        <p>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
+      </div>
 
       <ul>
         <li><a href="#">Войти</a></li>
@@ -252,7 +257,7 @@
 
     <footer>
       <div>
-        <a href="#">Техномарт</a>
+        <a href="#" aria-label="Переход на главную">Техномарт</a>
 
         <ul>
           <li><a href="#">Компания</a></li>
@@ -282,27 +287,54 @@
 
         <ul>
           <li>
-            <a href="#">ВК</a>
+            <a href="#" aria-label="Наша группа в ВК">ВК</a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a href="#" aria-label="Наша страница в Фейсбук">Фейсбук</a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a href="#" aria-label="Наша страница в Инстаграм">Инстаграм</a>
           </li>
         </ul>
 
         <div>
           <p>Обратная связь:</p>
-          <a href="#">mail@htmlacademy.ru</a>
+          <a href="#" aria-label="Напишите нам на e-mail">mail@htmlacademy.ru</a>
         </div>
 
         <div>
           <p>Разработано –</p>
-          <a href="#">htmlacademy.ru</a>
+          <a href="#" aria-label="Наш сайт">htmlacademy.ru</a>
         </div>
       </div>
     </footer>
+
+    <section>
+      <h2 class="visually-hidden">Где мы на карте:</h2>
+      <div>
+        <img src="img/popup-map.jpg" width="940" height="446" alt="Наше расположение на карте">
+      </div>
+      <button type="button" aria-label="Закрыть карту"></button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Обратная связь:</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" aria-label="Форма обратной связи">
+
+        <label for="username">Ваше имя:</label>
+        <input type="text" name="username" id="username" placeholder="Имя Фамилия" aria-label="Введите Ваши имя и фамилию">
+
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com" aria-label="Введите ваш e-mail">
+
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" placeholder="В свободной форме" aria-label="Напишите сообщение"></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+
+      <button type="button" aria-label="Закрыть форму обратной связи"></button>
+    </section>
   </body>
 
 </html>
