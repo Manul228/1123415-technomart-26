@@ -1,0 +1,37 @@
+body {
+  margin: 0
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+  text-decoration: none
+}
+
+.feedback {
+  color: black
+}
+
+.feedback ul {
+  list-style: none
+}
+
+.feedback p {
+  margin-bottom: 0
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.popup {
+  display: none;
+}
