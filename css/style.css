@@ -28,30 +28,16 @@
 
 @font-face {
   font-family: 'PT Sans';
-  font-weight: bold;
-  font-style: normal;
-  src: url('../fonts/web/ptsansbold.woff2') format('woff2'), url('../fonts/web/ptsansbold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'PT Sans';
-  font-weight: bold;
-  font-style: italic;
-  src: url('../fonts/web/ptsansbolditalic.woff2') format('woff2'), url('../fonts/web/ptsansbolditalic.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'PT Sans';
-  font-weight: normal;
-  font-style: italic;
-  src: url('../fonts/web/ptsansitalic.woff2') format('woff2'), url('../fonts/web/ptsansitalic.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'PT Sans';
   font-weight: normal;
   font-style: normal;
   src: url('../fonts/web/ptsansregular.woff2') format('woff2'), url('../fonts/web/ptsansregular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/web/ptsansbold.woff2') format('woff2'), url('../fonts/web/ptsansbold.woff') format('woff');
 }
 
 body {
@@ -106,13 +92,13 @@ a {
   line-height: 26px;
 }
 
-.address-telephone {
+.header-address-telephone {
   font-size: 21px;
   color: #ee3643;
   border: 3px solid #ffffff;
 }
 
-.address-text {
+.header-address-text {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -254,4 +240,133 @@ a {
 
 .footer-bottom {
   background-color: #293449;
+}
+
+.footer-address,
+.footer-address a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.service-offers {
+  list-style: none;
+}
+
+.service-offers a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+}
+
+.copyrights {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-info p .footer-info a {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-info p {
+  color: #ffffff;
+}
+
+.footer-info a {
+  color: #ffd180;
+}
+
+.footer-info a:hover,
+.footer-info a:focus {
+  text-decoration: underline;
+  text-decoration-color: #ffd180;
+}
+
+.footer-info a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.username {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.my-orders,
+.my-account {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+  text-decoration-color: #32425c;
+}
+
+.breadcrumps {
+  list-style: none;
+}
+
+.breadcrumps a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  font-family: 'PT Sans', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.legend-manufacturers {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-label {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.show-button {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  background: none;
+}
+
+.product-name {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.old-price {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.current-price {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  background-color: #ee3643;
 }
