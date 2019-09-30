@@ -291,7 +291,7 @@ a {
 
 .username {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 1;
   color: #000000;
 }
 
@@ -318,7 +318,7 @@ a {
 
 .page-title {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 1;
   text-transform: uppercase;
   color: #32425c;
   background-color: #f2f6f8;
