@@ -62,7 +62,7 @@ a {
 
 .main-navigation {
   font-size: 17px;
-  line-height: 12px;
+  line-height: 0.7;
   color: #ffffff;
   background-color: #32425c;
 }
@@ -89,7 +89,7 @@ a {
   font-style: italic;
   color: #ee3643;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
 }
 
 .header-address-telephone {
@@ -100,7 +100,7 @@ a {
 
 .header-address-text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.625;
   color: #32425c;
 }
 
@@ -149,7 +149,7 @@ a {
 .checkout {
   font-size: 17px;
   color: #ffffff;
-  line-height: 18px;
+  line-height: 1;
 }
 
 .checkout {
@@ -213,7 +213,7 @@ a {
 
 .about p {
   font-size: 13px;
-  line-height: 24px;
+  line-height: 1.85;
 }
 
 .partners {
@@ -222,7 +222,7 @@ a {
 
 .partners li {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1.85;
 }
 
 .button {
@@ -245,7 +245,7 @@ a {
 .footer-address,
 .footer-address a {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   color: #f3f7f9;
 }
 
@@ -255,19 +255,19 @@ a {
 
 .service-offers a {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   color: #ffd180;
 }
 
 .copyrights {
   color: #ffffff;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 .footer-info p .footer-info a {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125;
 }
 
 .footer-info p {
@@ -298,7 +298,7 @@ a {
 .my-orders,
 .my-account {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125;
   color: #32425c;
   text-decoration: underline;
   text-decoration-color: #32425c;
@@ -310,7 +310,7 @@ a {
 
 .breadcrumps a {
   font-size: 13px;
-  line-height: 18px;
+  line-height: 1.4;
   color: #000000;
   font-family: 'PT Sans', Arial, sans-serif;
   text-transform: uppercase;
@@ -328,14 +328,14 @@ a {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 1.77;
   text-transform: uppercase;
 }
 
 .filter-label {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1.33;
   text-transform: uppercase;
 }
 
@@ -357,7 +357,7 @@ a {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1.18;
   color: #999999;
   text-decoration: line-through;
 }
@@ -366,7 +366,7 @@ a {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1.18;
   color: #000000;
   background-color: #ee3643;
 }
