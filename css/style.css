@@ -350,7 +350,7 @@ a {
 .product-name {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1.11;
 }
 
 .old-price {
