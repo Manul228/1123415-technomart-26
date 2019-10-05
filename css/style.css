@@ -313,7 +313,7 @@ a {
   color: #000000;
 }
 
-.hot-list-item p:first-child {
+.hot-list-item p:first-of-type {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 1.18;
@@ -321,7 +321,7 @@ a {
   text-decoration: line-through;
 }
 
-.hot-list-item p:last-child {
+.hot-list-item p:last-of-type {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 1.18;
@@ -447,11 +447,29 @@ a {
   background-color: #ee3643;
 }
 
-.footer-top {
+.footer-top-first-line,
+.footer-top-second-line {
+  display: flex;
   background-color: #32425c;
 }
 
+.site-navigation {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.site-navigation a {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffffff;
+}
+
 .footer-bottom {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
   background-color: #293449;
 }
 
@@ -462,14 +480,21 @@ a {
   color: #f3f7f9;
 }
 
-.offers-offers {
+.footer-offers {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   list-style: none;
 }
 
-.offers-offers a {
+.footer-offers a {
   font-size: 18px;
   line-height: 1.33;
   color: #ffd180;
+}
+
+.social {
+  display: flex;
 }
 
 .copyrights {
@@ -517,7 +542,8 @@ a {
   text-decoration-color: #32425c;
 }
 
-.breadcrumps {
+.breadcrumbs {
+  display: flex;
   list-style: none;
 }
 
@@ -527,6 +553,10 @@ a {
   color: #000000;
   font-family: 'PT Sans', Arial, sans-serif;
   text-transform: uppercase;
+}
+
+.catalog {
+  display: flex;
 }
 
 .page-title {
@@ -560,8 +590,57 @@ a {
   background: none;
 }
 
+.sorting-menu {
+  display: flex;
+}
+
+.sorting-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-list-item {
+  font-weight: bold;
+  width: 218px;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+
+.product-list-item h3 {
+  font-size: 18px;
+  line-height: 1.11;
+  color: #000000;
+}
+
+.product-list-item p:first-of-type {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.18;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.product-list-item p:last-of-type {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.18;
+  color: #000000;
+  background-color: #ee3643;
+}
+
 .product-name {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.11;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
 }
