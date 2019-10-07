@@ -77,7 +77,12 @@ input[type='radio'].visually-hidden {
   /*background-color: rgba(100, 100, 100, 0.7);*/
 }
 
-.header-wrap {
+.header {
+  min-height: 320px;
+  background-color: #f4f7f9;
+}
+
+.header-top-wrap {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
@@ -91,6 +96,9 @@ input[type='radio'].visually-hidden {
 
 .header-middle {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 160px;
 }
 
 .header-bottom {
@@ -137,12 +145,19 @@ input[type='radio'].visually-hidden {
   color: #ee3643;
   font-size: 16px;
   line-height: 1.625;
+  margin-left: 51px;
+  margin-top: 40px;
+}
+
+.header-address {
+  margin-top: 50px;
 }
 
 .header-address-telephone {
   font-size: 21px;
   color: #ee3643;
   border: 3px solid #ffffff;
+  padding: 13px 52px 11px 74px;
 }
 
 .header-address-text {
@@ -154,12 +169,21 @@ input[type='radio'].visually-hidden {
 .user-navigation {
   display: flex;
   align-items: flex-start;
-  list-style: none;
 }
 
 .user-navigation-item a {
   font-size: 21px;
   color: #000000;
+  background-color: white;
+}
+
+.enter {
+  padding: 14px 27px 11px 48px;
+}
+
+.registration {
+  padding: 14px 25px 11px 25px;
+  margin-left: 10px;
 }
 
 .user-navigation-item a:hover,
@@ -314,16 +338,23 @@ input[type='radio'].visually-hidden {
 
 .offers-card-list {
   display: flex;
+  margin-top: 40px;
 }
 
 .offers-card-list-column-left {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 620px;
 }
 
 .offers-card-list-column-right {
   display: flex;
   flex-direction: column;
+}
+
+.offers-card-list-item {
+  margin-top: 20px;
 }
 
 .offers-card-list-item p {
@@ -333,9 +364,25 @@ input[type='radio'].visually-hidden {
   color: #ffffff;
 }
 
+.offers-card-list-column-left .offers-card-list-item:not(:first-of-type):not(.offers-card-slider),
+.offers-card-list-column-right .offers-card-list-item {
+  margin-left: 20px;
+}
+
 .offers-card-list-item a {
   font-size: 14px;
   line-height: 1.29;
+}
+
+.offers-card-list-item:not(.offers-card-slider) {
+  width: 300px;
+  height: 123px;
+}
+
+.offers-card-list-item.offers-card-slider {
+  width: 620px;
+  height: 266px;
+  background-color: black;
 }
 
 .orange {
