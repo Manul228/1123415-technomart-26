@@ -403,14 +403,42 @@ input[type='radio'].visually-hidden {
 
 .hot-top {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  margin-top: 55px;
   background-color: #f7f3ec;
 }
 
 .hot-top h2 {
   font-size: 30px;
-  line-height: 1;
   text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
   color: #32425c;
+  padding-top: 34px;
+  padding-left: 30px;
+  padding-bottom: 34px;
+}
+
+.button-link {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  background-color: #ee3643;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 255px;
+  height: 40px;
+  margin-right: 24px;
 }
 
 .hot-list {
@@ -426,9 +454,11 @@ input[type='radio'].visually-hidden {
 }
 
 .hot-list-item h3 {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.11;
   color: #000000;
+  width: 155px;
 }
 
 .hot-list-item p:first-of-type {
@@ -554,15 +584,6 @@ input[type='radio'].visually-hidden {
 .partners li {
   font-size: 18px;
   line-height: 1.11;
-}
-
-.button {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
-  border-radius: 3px;
-  background-color: #ee3643;
 }
 
 .footer-top {
