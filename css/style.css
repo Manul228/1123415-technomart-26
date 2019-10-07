@@ -443,38 +443,67 @@ input[type='radio'].visually-hidden {
 
 .hot-list {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 20px 0 0 0;
 }
 
 .hot-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   font-weight: bold;
-  width: 218px;
+  width: 220px;
+  min-height: 318px;
   text-align: center;
   border: 1px solid #cccccc;
 }
 
-.hot-list-item h3 {
+.hot-list-item * {
+  margin: 0;
+  padding: 0;
+}
+
+.perforator-title {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.11;
   color: #000000;
   width: 155px;
+  padding: 12px 33px 18px 32px;
 }
 
-.hot-list-item p:first-of-type {
+.old-price {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 1.18;
   color: #999999;
   text-decoration: line-through;
+  padding: 0 75px 13px 78px;
 }
 
-.hot-list-item p:last-of-type {
+.current-price {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 1.18;
   color: #000000;
   background-color: #ee3643;
+  padding: 13px 40px 13px 36px;
+}
+
+.current-price::after {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  content: '';
+  border: 19px solid white;
+  border-left-color: #ee3643;
 }
 
 .manufacturers-list {
