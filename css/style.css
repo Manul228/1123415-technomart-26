@@ -495,17 +495,6 @@ input[type='radio'].visually-hidden {
   padding: 13px 40px 13px 36px;
 }
 
-.current-price::after {
-  position: absolute;
-  top: 0;
-  right: -20px;
-  width: 0;
-  height: 0;
-  content: '';
-  border: 19px solid white;
-  border-left-color: #ee3643;
-}
-
 .manufacturers-list {
   display: flex;
   align-items: stretch;
@@ -535,13 +524,21 @@ input[type='radio'].visually-hidden {
 }
 
 .services-top h2 {
+  font-family: 'Cuprum' Arial, sans-serif;
   font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 1;
   color: #000000;
+  text-transform: uppercase;
+  margin-top: 70px;
 }
 
 .services {
   background-color: #f4f7f9;
+  border: 1px solid #f4f7f9;
+  margin-top: 85px;
 }
 
 .services-top p {
@@ -553,6 +550,7 @@ input[type='radio'].visually-hidden {
 
 .services-slider {
   display: flex;
+  margin-top: 75px;
 }
 
 .services-menu {
@@ -568,6 +566,12 @@ input[type='radio'].visually-hidden {
   display: flex;
   color: #ffffff;
   background-color: #32425c;
+  padding: 21px 140px 21px 23px;
+}
+
+.label-bordered {
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  box-shadow: 0px -1px 0 0 #293449, inset 0px -1px 0 0 #405069;
 }
 
 .label-controller:hover,
@@ -581,13 +585,58 @@ input[type='radio'].visually-hidden {
   display: none;
 }
 
+.slide-guarantee p {
+  width: 375px;
+}
+
+.slide-guarantee {
+  width: 630px;
+  min-height: 220px;
+  background: url('../img/guarantee.png') no-repeat 240px 5px;
+}
+
+.slide-credit {
+  width: 630px;
+  min-height: 220px;
+  background: url('../img/credit-money.png') no-repeat 164px 4px;
+}
+
+.slide-delivery {
+  width: 620px;
+  min-height: 220px;
+  background: url('../img/delivery.png') no-repeat 150px 28px;
+}
+
+.slide-delivery,
+.slide-guarantee,
+.slide-credit {
+  margin: 0;
+  padding: 0;
+  margin-left: 80px;
+}
+
 .slide-delivery h3,
 .slide-guarantee h3,
 .slide-credit h3 {
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 36px;
+  font-weight: normal;
   line-height: 1;
-  color: 32425c;
+  color: #32425c;
+  margin-top: 0;
+}
+
+.slide-delivery p,
+.slide-guarantee p,
+.slide-credit p {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #000000;
+}
+
+.button-credit-order {
+  margin-top: 30px;
+  width: 195px;
 }
 
 .slider-radio1:checked~.services-menu label[for='radio-1'],
