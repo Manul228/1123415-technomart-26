@@ -510,11 +510,28 @@ input[type='radio'].visually-hidden {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .manufacturers-list-item {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.manufacturers-list-item a {
   display: flex;
-  border: 1px solid #c5c5c5;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: solid 1px #eaeaea;
+  line-height: 0;
+  width: 218px;
+  height: 143px;
+}
+
+.manufacturers-list-item:not(:nth-child(4n+1)) {
+  margin-left: 20px;
 }
 
 .services-top h2 {
