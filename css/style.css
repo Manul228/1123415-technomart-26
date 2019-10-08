@@ -1005,10 +1005,12 @@ input[type='radio'].visually-hidden {
   line-height: 1;
   letter-spacing: normal;
   text-align: left;
+  float: top;
 }
 
 .popup-feedback {
   width: 620px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75), 0 -7px 0 0 #ee3643;
   border: 2px dotted yellow;
 }
 
@@ -1021,6 +1023,50 @@ input[type='radio'].visually-hidden {
   margin: 0 auto;
 }
 
+.popup-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .popup-wrap-flex {
   display: flex;
+}
+
+.popup-form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form-item input {
+  border: solid 2px #dee3e4;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 220px;
+}
+
+.popup-form-item input::placeholder {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a9a9a9;
+}
+
+.popup-form-item-left {
+  margin-right: auto;
+}
+
+.popup-form-item-right {
+  margin-left: auto;
+}
+
+.popup-bottom {
+  margin-top: 20px;
+  padding-top: 74px;
+  background-color: #f4f4f4;
 }
