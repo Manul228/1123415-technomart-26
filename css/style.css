@@ -827,10 +827,18 @@ input[type='radio'].visually-hidden {
   line-height: 1.5;
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .footer-info p,
 .footer-info a {
   font-size: 16px;
   line-height: 1.125;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-info p {
@@ -981,4 +989,38 @@ input[type='radio'].visually-hidden {
 .pagination {
   display: flex;
   list-style: none;
+}
+
+.button-popup-send {
+  width: 460px;
+  height: 40px;
+}
+
+.popup-label {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.popup-feedback {
+  width: 620px;
+  border: 2px dotted yellow;
+}
+
+.popup-feedback-top {
+  background-color: white;
+}
+
+.popup-container {
+  width: 460px;
+  margin: 0 auto;
+}
+
+.popup-wrap-flex {
+  display: flex;
 }
