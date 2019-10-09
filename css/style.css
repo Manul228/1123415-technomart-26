@@ -1011,7 +1011,6 @@ input[type='radio'].visually-hidden {
 .popup-feedback {
   width: 620px;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75), 0 -7px 0 0 #ee3643;
-  border: 2px dotted yellow;
 }
 
 .popup-feedback-top {
@@ -1038,14 +1037,28 @@ input[type='radio'].visually-hidden {
 }
 
 .popup-form-item input {
-  border: solid 2px #dee3e4;
-  padding-top: 14px;
-  padding-bottom: 15px;
-  padding-left: 16px;
+  box-sizing: border-box;
   width: 220px;
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  border: 2px solid #dee3e4;
+  border-radius: 4px;
 }
 
-.popup-form-item input::placeholder {
+.popup-form-item textarea {
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  border: 2px solid #dee3e4;
+  border-radius: 4px;
+  height: 115px;
+}
+
+.popup-form-item input::placeholder,
+.popup-form-item textarea::placeholder {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
@@ -1065,8 +1078,23 @@ input[type='radio'].visually-hidden {
   margin-left: auto;
 }
 
+.popup-form-item-left,
+.popup-form-item-right {
+  margin-top: 48px;
+}
+
+.popup-textarea {
+  margin-top: 22px;
+}
+
+.popup-form-item input,
+.popup-form-item textarea {
+  margin-top: 13px;
+}
+
 .popup-bottom {
-  margin-top: 20px;
-  padding-top: 74px;
+  margin-top: 37px;
+  padding-top: 37px;
   background-color: #f4f4f4;
+  border-top: 1px solid #f4f4f4;
 }
