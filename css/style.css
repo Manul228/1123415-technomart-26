@@ -457,7 +457,8 @@ input[type='radio'].visually-hidden {
   background-color: #8ed78f;
 }
 
-.hot-top {
+.hot-top,
+.page-title-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -466,7 +467,8 @@ input[type='radio'].visually-hidden {
   background-color: #f7f3ec;
 }
 
-.hot-top h2 {
+.hot-top h2,
+.page-title {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: normal;
@@ -551,8 +553,10 @@ input[type='radio'].visually-hidden {
   padding: 13px 40px 13px 36px;
 }
 
-.manufacturers-list {
+.manufacturers-list,
+.power-list {
   display: flex;
+  flex-direction: column;
   align-items: stretch;
   flex-wrap: wrap;
   margin: 0;
@@ -932,28 +936,27 @@ input[type='radio'].visually-hidden {
 
 .catalog {
   display: flex;
-}
-
-.manufacturers-list,
-.power-list,
-.product-list {
-  list-style: none;
+  margin-top: 20px;
 }
 
 .filters-title {
+  display: flex;
+  padding: 14px 149px 15px 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
   font-size: 13px;
   line-height: 1.38;
   color: #000000;
 }
 
-.filter-price {
+.filter-item {
   width: 220px;
   margin: 50px auto;
   padding: 0;
   border: none;
 }
 
-.range-filter {
+.filter-section {
   margin-bottom: 20px;
   padding-bottom: 26px;
   border-bottom: 1px solid #e5e5e5;
@@ -1049,19 +1052,32 @@ input[type='radio'].visually-hidden {
 }
 
 .page-title {
+  display: flex;
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
   color: #32425c;
-  background-color: #f2f6f8;
 }
 
-.legend-manufacturers {
+.filter-legend {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 1.77;
   text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-option {
+  margin-bottom: 23px;
+  padding-left: 35px;
+}
+
+.filter-manufacturers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .filter-label {
@@ -1071,57 +1087,92 @@ input[type='radio'].visually-hidden {
   text-transform: uppercase;
 }
 
+.filter-label::before {
+  display: block;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.filter-checkbox+.filter-label::before {
+  width: 23px;
+  height: 23px;
+  content: '';
+  background: url('../img/svg/checkbox-off.svg') no-repeat 0 0;
+}
+
+.filter-checkbox:checked+.filter-label::before {
+  width: 26px;
+  height: 25px;
+  content: '';
+  background: url('../img/svg/checkbox-on.svg') no-repeat 0 0;
+}
+
+.filter-radio+.filter-label::before {
+  width: 25px;
+  height: 25px;
+  content: '';
+  background: url('../img/svg/radio-off.svg') no-repeat 0 0;
+}
+
+.filter-radio:checked+.filter-label::before {
+  width: 25px;
+  height: 25px;
+  content: '';
+  background: url('../img/svg/radio-on.svg') no-repeat 0 0;
+}
+
 .show-button {
+  display: flex;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
   background: none;
+  padding: 14px 39px 15px 39px;
+}
+
+.column-right {
+  margin-left: 20px;
 }
 
 .sorting-menu {
   display: flex;
+  background-color: #f7f3ec;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .sorting-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
+  justify-content: space-between;
 }
 
 .product-list {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .product-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   font-weight: bold;
   width: 218px;
+  min-height: 318px;
   text-align: center;
   border: 1px solid #cccccc;
+  margin-top: 20px;
 }
 
-.product-list-item h3 {
-  font-size: 18px;
-  line-height: 1.11;
-  color: #000000;
-}
-
-.product-list-item p:first-of-type {
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.18;
-  color: #999999;
-  text-decoration: line-through;
-}
-
-.product-list-item p:last-of-type {
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.18;
-  color: #000000;
-  background-color: #ee3643;
+.product-list-item:not(:nth-child(3n+1)) {
+  margin-left: 20px;
 }
 
 .product-name {
