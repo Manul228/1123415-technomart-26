@@ -342,13 +342,19 @@
       </div>
     </footer>
 
-    <section>
-      <p>Товар добавлен в корзину!</p>
-      <div>
-        <a href="#">Оформить заказ</a>
-        <a href="#">Продолжить покупки</a>
+    <section class="popup popup-adding">
+      <div class="popup-adding-wrap-flex">
+
+        <div class="popup-adding-top-flex-wrap">
+          <p class="popup-adding-banner">Товар добавлен в корзину!</p>
+        </div>
+
+        <div class="popup-adding-bottom-flex-wrap">
+          <a class="button button-link button-popup-order" href="#">Оформить заказ</a>
+          <a class="button button-popup-continue" href="#">Продолжить покупки</a>
+        </div>
+        <button class="popup-close" type="button" aria-label="Закрыть окно добавления в корзину"></button>
       </div>
-      <button type="button" aria-label="Закрыть окно добавления в корзину"></button>
     </section>
   </body>
 

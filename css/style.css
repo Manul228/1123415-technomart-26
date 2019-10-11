@@ -553,7 +553,14 @@ input[type='radio'].visually-hidden {
   padding: 13px 40px 13px 36px;
 }
 
-.manufacturers-list,
+.manufacturers-list {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .power-list {
   display: flex;
   flex-direction: column;
@@ -1191,6 +1198,10 @@ input[type='radio'].visually-hidden {
   height: 40px;
 }
 
+.popup {
+  position: relative;
+}
+
 .popup-label {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
@@ -1291,4 +1302,84 @@ input[type='radio'].visually-hidden {
   margin-top: 37px;
   padding-top: 37px;
   background-color: #f4f4f4;
+}
+
+.popup-adding {
+  width: 620px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75), 0 -7px 0 0 #ee3643;
+  /*     */
+  margin-top: 30px;
+}
+
+.popup-adding-wrap-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-adding-top-flex-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding: 75px 125px 68px 179px;
+  background: url('../img/svg/icon-mark.svg') no-repeat 82px 48px;
+}
+
+.popup-adding-bottom-flex-wrap {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 37px;
+  padding-top: 37px;
+  background-color: #f1f1f1;
+}
+
+.popup-adding-banner {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.button-popup-order {
+  width: 220px;
+}
+
+.button-popup-continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  padding: 12px 48px 10px 44px;
+  border-radius: 4px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+.popup-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  background: url(../img/svg/icon-close.svg) no-repeat 0 0;
+  border: none;
 }
