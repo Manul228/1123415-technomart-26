@@ -150,27 +150,79 @@ input[type='radio'].visually-hidden {
 
 .header-address {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-address-telephone {
   font-size: 21px;
+  line-height: 1;
   color: #ee3643;
   border: 3px solid #ffffff;
-  padding: 13px 52px 11px 74px;
+  padding: 10px 49px 8px 71px;
 }
 
 .header-address-text {
   font-size: 14px;
   line-height: 1.625;
   color: #32425c;
+  margin-top: 0;
 }
 
 .user-navigation {
   display: flex;
   align-items: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
-.user-navigation-item a {
+.user-wrap {
+  margin-top: 45px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+}
+
+.username {
+  display: block;
+  font-size: 21px;
+  line-height: 1;
+  color: #000000;
+  padding: 14px 69px 11px 47px;
+}
+
+.my-orders,
+.my-account {
+  font-size: 16px;
+  line-height: 1.125;
+  color: #32425c;
+  text-decoration: underline;
+  text-decoration-color: #32425c;
+}
+
+.my-orders {
+  margin-left: 17px;
+}
+
+.my-orders::after {
+  display: block;
+  position: relative;
+  left: 107px;
+  top: -10px;
+  width: 4px;
+  height: 4px;
+  content: '';
+  border-radius: 50%;
+  background-color: #32425c;
+}
+
+.my-account {
+  margin-left: 32px;
+}
+
+.enter,
+.registration {
   font-size: 21px;
   color: #000000;
   background-color: white;
@@ -259,7 +311,7 @@ input[type='radio'].visually-hidden {
 }
 
 .markers {
-  padding: 13px 28px 11px 43px;
+  padding: 13px 28px 11px 44px;
 }
 
 .basket {
@@ -269,6 +321,11 @@ input[type='radio'].visually-hidden {
 .checkout {
   padding: 13px 22px 12px 20px;
   background-color: #63a63e;
+}
+
+.basket-not-empty {
+  background-color: #ee3643;
+  padding: 13px 28px 11px 48px;
 }
 
 .markers:hover,
@@ -311,7 +368,7 @@ input[type='radio'].visually-hidden {
   width: 202px;
   height: 20px;
   margin: 0;
-  padding: 11px 20px 11px 48px;
+  padding: 11px 18px 11px 48px;
   background-color: #293449;
   border: none;
 }
@@ -860,27 +917,12 @@ input[type='radio'].visually-hidden {
   color: #ee3643;
 }
 
-.username {
-  font-size: 21px;
-  line-height: 1;
-  color: #000000;
-}
-
-.my-orders,
-.my-account {
-  font-size: 16px;
-  line-height: 1.125;
-  color: #32425c;
-  text-decoration: underline;
-  text-decoration-color: #32425c;
-}
-
 .breadcrumbs {
   display: flex;
   list-style: none;
 }
 
-.breadcrumps a {
+.breadcrumbs a {
   font-size: 13px;
   line-height: 1.4;
   color: #000000;
@@ -902,6 +944,108 @@ input[type='radio'].visually-hidden {
   font-size: 13px;
   line-height: 1.38;
   color: #000000;
+}
+
+.filter-price {
+  width: 220px;
+  margin: 50px auto;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  margin-bottom: 20px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background-color: #f7f3ec;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  cursor: pointer;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 17px;
+  width: 75px;
+  padding: 9px 10px;
+  padding-right: 8px;
+  padding-left: 13px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f7f3ec;
+}
+
+.price-controls {
+  position: relative;
+}
+
+.price-controls::before {
+  position: absolute;
+  z-index: 0;
+  top: 19px;
+  left: 105px;
+  width: 10px;
+  height: 1px;
+  content: '';
+  background-color: #000000;
+}
+
+.max-price {
+  text-align: right;
 }
 
 .page-title {
