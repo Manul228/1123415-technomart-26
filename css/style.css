@@ -192,6 +192,10 @@ input[type='radio'].visually-hidden {
   padding: 14px 69px 11px 47px;
 }
 
+.username:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .my-orders,
 .my-account {
   font-size: 16px;
@@ -199,6 +203,20 @@ input[type='radio'].visually-hidden {
   color: #32425c;
   text-decoration: underline;
   text-decoration-color: #32425c;
+}
+
+.my-orders:hover,
+.my-orders:focus,
+.my-account:hover,
+.my-account:focus {
+  text-decoration-color: #ee3643;
+  color: #ee3643;
+}
+
+.my-orders:active,
+.my-account:active {
+  text-decoration-color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .my-orders {
@@ -846,6 +864,16 @@ input[type='radio'].visually-hidden {
   color: #ffffff;
 }
 
+.site-navigation-item a:hover,
+.site-navigation-item a:focus {
+  text-decoration: underline;
+}
+
+.site-navigation-item a:active {
+  text-decoration: none;
+  color: rgba(241, 245, 247, 0.5);
+}
+
 .site-navigation-item:not(:nth-child(1)) {
   margin-left: 60px;
 }
@@ -879,6 +907,16 @@ input[type='radio'].visually-hidden {
   font-size: 18px;
   line-height: 1.33;
   color: #ffd180;
+}
+
+.footer-offers-list-item a:hover,
+.footer-offers-list-item a:focus {
+  text-decoration: underline;
+}
+
+.footer-offers-list-item a:active {
+  text-decoration: none;
+  color: rgba(255, 209, 128, 0.5);
 }
 
 .footer-offers-list-item:not(:nth-child(1)) {
