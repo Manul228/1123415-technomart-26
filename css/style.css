@@ -374,15 +374,16 @@ input[type='radio'].visually-hidden {
 }
 
 .search-box {
+  position: relative;
   background-color: #293449;
   height: 42px;
 }
 
-.search-box input::placeholder {
+.search-line::placeholder {
   color: #ffffff;
 }
 
-.search-box input {
+.search-line {
   width: 202px;
   height: 20px;
   margin: 0;
@@ -391,19 +392,39 @@ input[type='radio'].visually-hidden {
   border: none;
 }
 
-.search-box input:hover {
+.search-line:hover {
   background-color: #212a3a;
   color: #ffffff;
 }
 
-.search-box input:active,
-.search-box input:focus {
+.search-line:active,
+.search-line:focus {
   background-color: #ffffff;
   color: #000000;
 }
 
-.search-box input:focus::placeholder {
+.search-line:focus::placeholder {
   color: #000000;
+}
+
+.icon-search {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 17px;
+  top: 12px;
+  opacity: 0.3;
+  fill: white;
+}
+
+.search-line:hover+.icon-search {
+  opacity: 1;
+}
+
+.search-line:active+.icon-search,
+.search-line:focus+.icon-search {
+  fill: #ee3643;
+  opacity: 1;
 }
 
 .offers-cards {
