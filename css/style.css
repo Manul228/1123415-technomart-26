@@ -610,6 +610,15 @@ input[type='radio'].visually-hidden {
   width: 135px;
 }
 
+.offers-card-button:hover,
+.offers-card-button:focus {
+  opacity: 0.2;
+}
+
+.offers-card-button:active {
+  opacity: 0.3;
+}
+
 .offers-card-list-column-left .offers-card-list-item:not(:first-of-type):not(.offers-card-slider),
 .offers-card-list-column-right .offers-card-list-item {
   margin-left: 20px;
