@@ -179,6 +179,7 @@ input[type='radio'].visually-hidden {
 }
 
 .user-wrap {
+  position: relative;
   margin-top: 45px;
   margin-bottom: 8px;
   background-color: #ffffff;
@@ -192,8 +193,48 @@ input[type='radio'].visually-hidden {
   padding: 14px 69px 11px 47px;
 }
 
+.username::before {
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  top: 13px;
+  left: 13px;
+  content: '';
+  opacity: 0.3;
+  background: url('../img/svg/icon-user.svg') no-repeat 0 0;
+}
+
+.username:hover::before,
+.username:focus::before {
+  opacity: 1;
+}
+
+.username:active::before {
+  opacity: 0.3;
+}
+
 .username:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.username::after {
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  top: 13px;
+  right: 10px;
+  content: '';
+  opacity: 0.3;
+  background: url('../img/svg/icon-logout.svg') no-repeat 0 0;
+}
+
+.username:hover::after,
+.username:focus::after {
+  opacity: 1;
+}
+
+.username:active::after {
+  opacity: 0.3;
 }
 
 .my-orders,
@@ -241,7 +282,13 @@ input[type='radio'].visually-hidden {
 
 .enter,
 .registration {
+  position: relative;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
   color: #000000;
   background-color: white;
 }
@@ -250,18 +297,41 @@ input[type='radio'].visually-hidden {
   padding: 14px 27px 11px 48px;
 }
 
+.enter:hover,
+.enter:focus,
+.registration:hover,
+.registration:focus {
+  color: #ee3643;
+}
+
+.enter:active,
+.registration:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .registration {
   padding: 14px 25px 11px 25px;
   margin-left: 10px;
 }
 
-.user-navigation-item a:hover,
-.user-navigation-item a:focus {
-  color: #ee3643;
+.enter::before {
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  top: 20px;
+  left: 14px;
+  content: '';
+  opacity: 0.3;
+  background: url('../img/svg/icon-login-hover.svg') no-repeat 0 0;
 }
 
-.user-navigation-item a:active {
-  color: rgba(0, 0, 0, 0.3);
+.enter:hover::before,
+.enter:focus::before {
+  opacity: 1;
+}
+
+.enter:active::before {
+  opacity: 0.3;
 }
 
 .header-logo {
@@ -323,6 +393,7 @@ input[type='radio'].visually-hidden {
 .markers,
 .basket,
 .checkout {
+  position: relative;
   font-size: 17px;
   color: #ffffff;
   line-height: 1.06;
@@ -339,6 +410,48 @@ input[type='radio'].visually-hidden {
 .checkout {
   padding: 13px 22px 12px 20px;
   background-color: #63a63e;
+}
+
+.markers:active,
+.basket:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.markers::before {
+  position: absolute;
+  left: 17px;
+  width: 16px;
+  height: 18px;
+  content: '';
+  opacity: 0.3;
+  background: url('../img/svg/icon-bookmark.svg') no-repeat 0 0;
+}
+
+.basket::before {
+  position: absolute;
+  left: 18px;
+  width: 16px;
+  height: 18px;
+  content: '';
+  opacity: 0.3;
+  background: url('../img/svg/icon-cart.svg') no-repeat 0 0;
+}
+
+.markers:hover::before {
+  opacity: 1;
+}
+
+.markers:active::before {
+  opacity: 0.3;
+}
+
+.basket:hover::before {
+  opacity: 1;
+}
+
+.basket:active::before {
+  opacity: 0.3;
 }
 
 .basket-not-empty {
@@ -449,24 +562,57 @@ input[type='radio'].visually-hidden {
 }
 
 .offers-card-list-item {
+  position: relative;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
 }
 
-.offers-card-list-item p {
+.offers-card-title {
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 24px;
-  line-height: 1.25;
   font-weight: bold;
-  color: #ffffff;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-left: 23px;
+  margin-top: 26px;
+}
+
+.offers-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: white;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin: 0;
+  margin-left: 25px;
+  margin-bottom: 22px;
+  margin-top: 15px;
+  width: 135px;
 }
 
 .offers-card-list-column-left .offers-card-list-item:not(:first-of-type):not(.offers-card-slider),
 .offers-card-list-column-right .offers-card-list-item {
   margin-left: 20px;
-}
-
-.offers-card-list-item a {
-  font-size: 14px;
-  line-height: 1.29;
 }
 
 .offers-card-list-item:not(.offers-card-slider) {
@@ -480,20 +626,34 @@ input[type='radio'].visually-hidden {
   background-color: black;
 }
 
-.orange {
-  background-color: #ffbf47;
+.orange-1 {
+  background: #ffbf47 url('../img/svg/icon-1.svg') no-repeat 213px 31px;
 }
 
 .aqua {
-  background-color: #3bbce3;
+  background: #3bbce3 url('../img/svg/icon-2.svg') no-repeat 197px 33px;
 }
 
 .purple {
-  background-color: #dc91d8;
+  background: #dc91d8 url('../img/svg/icon-3.svg') no-repeat 191px 31px;
 }
 
 .green {
-  background-color: #8ed78f;
+  background: #8ed78f url('../img/svg/icon-4.svg') no-repeat 196px 26px;
+}
+
+.orange-2 {
+  background: #ffbf47 url('../img/svg/icon-5.svg') no-repeat 191px 32px;
+}
+
+.new-flagged::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 59px;
+  content: '';
+  background: url('../img/new-flag.png') no-repeat 0 0;
 }
 
 .hot-top,
@@ -555,6 +715,12 @@ input[type='radio'].visually-hidden {
   min-height: 318px;
   text-align: center;
   border: 1px solid #cccccc;
+  padding: 0;
+}
+
+.hot-list-item:hover,
+.hot-list-item:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .hot-list-item * {
@@ -568,16 +734,19 @@ input[type='radio'].visually-hidden {
   line-height: 1.11;
   color: #000000;
   width: 155px;
-  padding: 12px 33px 18px 32px;
 }
 
 .old-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 1.18;
   color: #999999;
   text-decoration: line-through;
-  padding: 0 75px 13px 78px;
+  margin-top: 18px;
+  margin-bottom: 13px;
 }
 
 .current-price {
@@ -588,8 +757,9 @@ input[type='radio'].visually-hidden {
   font-size: 17px;
   line-height: 1.18;
   color: white;
-  background-color: #ee3643;
-  padding: 13px 40px 13px 36px;
+  background: url('../img/svg/red-button.svg') no-repeat 0 0;
+  padding: 8px 40px 8px 40px;
+  margin-bottom: 0px;
 }
 
 .manufacturers-list {
