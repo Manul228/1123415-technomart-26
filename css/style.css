@@ -540,6 +540,25 @@ input[type='radio'].visually-hidden {
   opacity: 1;
 }
 
+.breadcrumbs-item {
+  position: relative;
+  padding-right: 40px;
+}
+
+.breadcrumbs-item:last-child {
+  padding-right: 0;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  top: 2px;
+  right: 17px;
+  width: 8px;
+  height: 12px;
+  content: '';
+  background: url('../img/svg/icon-right-small.svg') no-repeat 0 0;
+}
+
 .offers-cards {
   display: flex;
 }
