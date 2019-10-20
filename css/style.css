@@ -1267,6 +1267,50 @@ input[type='radio'].visually-hidden {
   display: flex;
 }
 
+.social-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 39px;
+  border-radius: 50%;
+  background-color: #212a3a;
+}
+
+.social li:not(:nth-child(1)) {
+  margin-left: 3px;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #ee3643;
+}
+
+.vk-icon {
+  position: absolute;
+  top: 11px;
+  left: 6px;
+  width: 26px;
+  height: 26px;
+}
+
+.facebook-icon {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  width: 26px;
+  height: 26px;
+}
+
+.instagram-icon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 26px;
+  height: 26px;
+}
+
 .copyrights {
   color: #ffffff;
   font-size: 16px;
