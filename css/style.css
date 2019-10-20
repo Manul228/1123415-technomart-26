@@ -738,6 +738,54 @@ input[type='radio'].visually-hidden {
   padding: 0;
 }
 
+.product-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.product-list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  width: 220px;
+  min-height: 318px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.product-list-item * {
+  margin: 0;
+  padding: 0;
+}
+
+.product-list-item:hover,
+.product-list-item:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.product-list-item:not(:nth-child(3n+1)) {
+  margin-left: 17px;
+}
+
+.hot-list-item:hover .actions,
+.hot-list-item:focus .actions {
+  display: block;
+}
+
+.product-list-item:hover .actions,
+.product-list-item:focus .actions {
+  display: block;
+}
+
 .actions {
   position: absolute;
   display: flex;
@@ -825,11 +873,6 @@ input[type='radio'].visually-hidden {
   opacity: 0.3;
 }
 
-.hot-list-item:hover .actions,
-.hot-list-item:focus .actions {
-  display: block;
-}
-
 .perforator-title {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
@@ -860,7 +903,7 @@ input[type='radio'].visually-hidden {
   line-height: 1.18;
   color: white;
   background: url('../img/svg/red-button.svg') no-repeat 0 0;
-  padding: 8px 40px 8px 40px;
+  padding: 8px 40px 13px 40px;
   margin-bottom: 0px;
 }
 
@@ -1576,32 +1619,6 @@ input[type='radio'].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.product-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
-.product-list-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  font-weight: bold;
-  width: 218px;
-  min-height: 318px;
-  text-align: center;
-  border: 1px solid #cccccc;
-  margin-top: 20px;
-}
-
-.product-list-item:not(:nth-child(3n+1)) {
-  margin-left: 20px;
 }
 
 .product-name {
