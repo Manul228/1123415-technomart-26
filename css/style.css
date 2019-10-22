@@ -931,6 +931,7 @@ input[type='radio'].visually-hidden {
 .manufacturers-list {
   display: flex;
   align-items: stretch;
+  flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -1569,6 +1570,7 @@ input[type='radio'].visually-hidden {
 }
 
 .filter-option {
+  position: relative;
   margin-bottom: 23px;
   padding-left: 35px;
 }
@@ -1590,7 +1592,8 @@ input[type='radio'].visually-hidden {
   display: block;
   float: left;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  left: 0;
 }
 
 .filter-checkbox+.filter-label::before {
@@ -1601,8 +1604,8 @@ input[type='radio'].visually-hidden {
 }
 
 .filter-checkbox:checked+.filter-label::before {
-  width: 26px;
-  height: 25px;
+  width: 27px;
+  height: 23px;
   content: '';
   background: url('../img/svg/checkbox-on.svg') no-repeat 0 0;
 }
@@ -1619,6 +1622,10 @@ input[type='radio'].visually-hidden {
   height: 25px;
   content: '';
   background: url('../img/svg/radio-on.svg') no-repeat 0 0;
+}
+
+.filter-checkbox:disabled+.filter-label {
+  opacity: 0.3;
 }
 
 .show-button {
