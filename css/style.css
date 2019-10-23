@@ -94,9 +94,10 @@ input[type='radio'].visually-hidden {
 }
 
 .header-middle {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   min-height: 160px;
 }
 
@@ -145,18 +146,21 @@ input[type='radio'].visually-hidden {
   font-size: 16px;
   line-height: 1.625;
   margin-left: 51px;
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .header-address {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: stretch;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 45px;
 }
 
 .header-address-telephone {
+  position: relative;
   font-size: 21px;
   line-height: 1;
   color: #ee3643;
@@ -164,18 +168,33 @@ input[type='radio'].visually-hidden {
   padding: 10px 49px 8px 71px;
 }
 
+.header-address-telephone::before {
+  position: absolute;
+  content: '';
+  width: 19px;
+  height: 19px;
+  background: url('../img/svg/icon-phone.svg') no-repeat 0 0;
+  top: 10px;
+  left: 12px;
+}
+
 .header-address-text {
   font-size: 14px;
   line-height: 1.625;
   color: #32425c;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .user-navigation {
+  position: relative;
   display: flex;
   align-items: flex-start;
   margin: 0;
   padding: 0;
+}
+
+.user-navigation-item {
+  margin-top: 0;
 }
 
 .user-wrap {
@@ -283,6 +302,7 @@ input[type='radio'].visually-hidden {
 .enter,
 .registration {
   position: relative;
+  display: block;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 21px;
   font-weight: normal;
@@ -291,6 +311,7 @@ input[type='radio'].visually-hidden {
   line-height: 1;
   color: #000000;
   background-color: white;
+  margin-top: 45px;
 }
 
 .enter {
@@ -318,7 +339,7 @@ input[type='radio'].visually-hidden {
   position: absolute;
   width: 20px;
   height: 17px;
-  top: 20px;
+  top: 14px;
   left: 14px;
   content: '';
   opacity: 0.3;
