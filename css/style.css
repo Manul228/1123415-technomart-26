@@ -951,8 +951,6 @@ input[type='radio'].visually-hidden {
 
 .manufacturers-list {
   display: flex;
-  align-items: stretch;
-  flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
