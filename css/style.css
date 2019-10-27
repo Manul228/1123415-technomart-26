@@ -1820,15 +1820,32 @@ input[type='radio'].visually-hidden {
 }
 
 .popup {
-  position: relative;
+  position: fixed;
 }
 
 .popup-map {
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 940px;
+  height: 446px;
+  margin-top: -273px;
+  margin-left: -470px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+}
+
+.popup-map-img {
   z-index: 1;
 }
 
-.popup-feedback iframe {
+.popup-map iframe {
+  position: absolute;
   z-index: 2;
+  top: 0;
+  left: 0;
+  border: none;
 }
 
 .popup-label {
@@ -1844,7 +1861,15 @@ input[type='radio'].visually-hidden {
 }
 
 .popup-feedback {
+  z-index: 100;
   width: 620px;
+  height: 430px;
+  top: 50%;
+  left: 50%;
+  display: none;
+  margin-top: -212px;
+  margin-left: -310px;
+  background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75), 0 -7px 0 0 #ee3643;
 }
 
@@ -1942,6 +1967,8 @@ input[type='radio'].visually-hidden {
 .popup-bottom {
   margin-top: 37px;
   padding-top: 37px;
+  padding-bottom: 37px;
+  ;
   background-color: #f4f4f4;
 }
 
@@ -2016,6 +2043,7 @@ input[type='radio'].visually-hidden {
 
 .popup-close {
   position: absolute;
+  z-index: 10;
   top: 9px;
   right: 9px;
   width: 21px;
@@ -2024,4 +2052,48 @@ input[type='radio'].visually-hidden {
   background: url(../img/svg/icon-close.svg) no-repeat 0 0;
   border: none;
   outline-color: transparent;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.5s ease-out;
 }
