@@ -1022,7 +1022,19 @@ input[type='radio'].visually-hidden {
 
 .services-slider {
   display: flex;
+  position: relative;
   margin-top: 75px;
+}
+
+.services-slider::before {
+  position: absolute;
+  z-index: 20;
+  top: -31px;
+  left: 232px;
+  width: 10px;
+  height: 272px;
+  content: '';
+  background: url(../img/shadow.png) no-repeat 0 0;
 }
 
 .services-menu {
@@ -1131,8 +1143,9 @@ input[type='radio'].visually-hidden {
   display: block;
 }
 
-.wrap-flex {
+.description-wrap-flex {
   display: flex;
+  justify-content: space-between;
 }
 
 .technomart-description,
@@ -1143,11 +1156,11 @@ input[type='radio'].visually-hidden {
 }
 
 .technomart-description {
-  flex-grow: 2;
+  width: 520px;
 }
 
 .contacts-description {
-  flex-grow: 1;
+  width: 300px;
 }
 
 .description-title {
@@ -1160,8 +1173,15 @@ input[type='radio'].visually-hidden {
 }
 
 .description-comment {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 1.85;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #000000;
 }
 
 .partners-list-item {
@@ -1973,10 +1993,16 @@ input[type='radio'].visually-hidden {
 }
 
 .popup-adding {
-  width: 620px;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 622px;
+  height: 276px;
+  margin-top: -138px;
+  margin-left: -311px;
+  background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75), 0 -7px 0 0 #ee3643;
-  /*     */
-  margin-top: 30px;
 }
 
 .popup-adding-wrap-flex {
@@ -2041,7 +2067,9 @@ input[type='radio'].visually-hidden {
   color: black;
 }
 
-.popup-close {
+.popup-close-map,
+.popup-close-feedback,
+.popup-close-adding {
   position: absolute;
   z-index: 10;
   top: 9px;
