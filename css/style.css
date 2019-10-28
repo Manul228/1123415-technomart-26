@@ -480,7 +480,7 @@ input[type='radio'].visually-hidden {
 
 .basket-not-empty {
   background-color: #ee3643;
-  padding: 13px 28px 11px 48px;
+  padding: 11px 28px 13px 48px;
 }
 
 .markers:hover,
@@ -1100,7 +1100,7 @@ input[type='radio'].visually-hidden {
   line-height: 1.18;
   color: #999999;
   text-decoration: line-through;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 13px;
 }
 
@@ -1114,7 +1114,7 @@ input[type='radio'].visually-hidden {
   color: white;
   background: url('../img/svg/red-button.svg') no-repeat 0 0;
   padding: 8px 42px 14px 38px;
-  margin-top: -2px;
+  margin-top: -4px;
   margin-bottom: 0px;
   margin-left: 6px;
   margin-right: -3px;
@@ -1501,6 +1501,7 @@ input[type='radio'].visually-hidden {
 .site-navigation-item a:hover,
 .site-navigation-item a:focus {
   text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 .site-navigation-item a:active {
@@ -1554,6 +1555,7 @@ input[type='radio'].visually-hidden {
 .footer-offers-list-item a:hover,
 .footer-offers-list-item a:focus {
   text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 .footer-offers-list-item a:active {
@@ -1660,6 +1662,7 @@ input[type='radio'].visually-hidden {
 .footer-info a:focus {
   text-decoration: underline;
   text-decoration-color: #ffd180;
+  text-decoration-skip-ink: none;
 }
 
 .footer-info a:active {
@@ -1989,6 +1992,11 @@ input[type='radio'].visually-hidden {
   opacity: 0.18;
 }
 
+.sorting-checked {
+  opacity: 1;
+  border: none;
+}
+
 .sorting-list-item:hover,
 .sorting-list-item:focus {
   opacity: 1;
@@ -2031,6 +2039,10 @@ input[type='radio'].visually-hidden {
 
 .link-up {
   margin-right: 18px;
+}
+
+.arrow-checked path {
+  fill: #ee3643;
 }
 
 .link-up:hover path,
