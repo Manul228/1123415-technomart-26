@@ -1930,6 +1930,9 @@ input[type='radio'].visually-hidden {
   background: url('../img/svg/radio-off.svg') no-repeat 0 0;
 }
 
+
+/*ховеры боксов*/
+
 .filter-radio:checked+.filter-label::before {
   width: 25px;
   height: 25px;
