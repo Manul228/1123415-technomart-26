@@ -1902,6 +1902,7 @@ input[type='radio'].visually-hidden {
   cursor: pointer;
   position: absolute;
   left: 0;
+  opacity: 0.8;
 }
 
 .filter-checkbox:focus+.filter-label,
@@ -1930,8 +1931,12 @@ input[type='radio'].visually-hidden {
   background: url('../img/svg/radio-off.svg') no-repeat 0 0;
 }
 
-
-/*ховеры боксов*/
+.filter-checkbox:hover+.filter-label::before,
+.filter-radio:hover+.filter-label::before,
+.filter-checkbox:focus+.filter-label::before,
+.filter-radio:focus+.filter-label::before {
+  opacity: 1;
+}
 
 .filter-radio:checked+.filter-label::before {
   width: 25px;
