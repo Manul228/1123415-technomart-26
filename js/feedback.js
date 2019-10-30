@@ -7,9 +7,29 @@ var username = popup.querySelector('.feedback-username');
 var email = popup.querySelector('.feedback-email');
 var message = popup.querySelector('.feedback-message');
 
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storageUsername = localStorage.getItem('username');
+  storageEmail = localStorage.getItem('email');
+} catch (err) {
+  isStorageSupport = false;
+}
+
 link.addEventListener('click', function(evt) {
   evt.preventDefault();
   popup.classList.add('modal-show');
+
+  if (storageUsername) {
+    username.value = storageUsername;
+    email.focus();
+  }
+
+  if (storageEmail) {
+    email.value = storageEmail;
+    message.focus();
+  }
 });
 
 close.addEventListener('click', function(evt) {
@@ -24,6 +44,11 @@ form.addEventListener('submit', function(evt) {
     popup.classList.remove('modal-error');
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add('modal-error');
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('username', username.value);
+      localStorage.setItem('email', email.value);
+    }
   }
 });
 
