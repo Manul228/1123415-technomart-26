@@ -130,8 +130,7 @@ input[type='radio'].visually-hidden {
   color: #ffffff;
 }
 
-.site-menu a:hover,
-.site-menu a:focus {
+.site-menu a:hover {
   background-color: #293449;
 }
 
@@ -257,8 +256,7 @@ input[type='radio'].visually-hidden {
   opacity: 0.3;
 }
 
-.logout:hover>.icon-logout,
-.logout:focus>.icon-logout {
+.logout:hover>.icon-logout {
   opacity: 1;
 }
 
@@ -276,9 +274,7 @@ input[type='radio'].visually-hidden {
 }
 
 .my-orders:hover,
-.my-orders:focus,
-.my-account:hover,
-.my-account:focus {
+.my-account:hover {
   text-decoration-color: #ee3643;
   color: #ee3643;
 }
@@ -329,9 +325,7 @@ input[type='radio'].visually-hidden {
 }
 
 .enter:hover,
-.enter:focus,
-.registration:hover,
-.registration:focus {
+.registration:hover {
   color: #ee3643;
 }
 
@@ -356,8 +350,7 @@ input[type='radio'].visually-hidden {
   background: url('../img/svg/icon-login-hover.svg') no-repeat 0 0;
 }
 
-.enter:hover::before,
-.enter:focus::before {
+.enter:hover::before {
   opacity: 1;
 }
 
@@ -385,8 +378,7 @@ input[type='radio'].visually-hidden {
   padding-top: 9px;
 }
 
-.logo:hover,
-.logo:focus {
+.logo:hover {
   background-color: #ca2c37;
   box-shadow: 0 5px #9c2730;
 }
@@ -484,14 +476,11 @@ input[type='radio'].visually-hidden {
 }
 
 .markers:hover,
-.basket:hover,
-.markers:focus,
-.basket:focus {
+.basket:hover {
   background-color: #212a3a;
 }
 
-.checkout:hover,
-.checkout:focus {
+.checkout:hover {
   background-color: #5fbb2d;
 }
 
@@ -660,13 +649,12 @@ input[type='radio'].visually-hidden {
   width: 135px;
 }
 
-.offers-card-button:hover,
-.offers-card-button:focus {
-  opacity: 0.2;
+.offers-card-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .offers-card-button:active {
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .offers-card-list-column-left .offers-card-list-item:not(:first-of-type):not(.offers-card-slider),
@@ -865,7 +853,7 @@ input[type='radio'].visually-hidden {
   justify-content: space-between;
   align-items: center;
   height: 90px;
-  background-color: #f7f3ec;
+  background-color: #f9f5f0;
 }
 
 .page-title-wrap {
@@ -873,7 +861,7 @@ input[type='radio'].visually-hidden {
   justify-content: space-between;
   align-items: center;
   height: 90px;
-  background-color: #f7f3ec;
+  background-color: #f9f5f0;
   margin-top: 21px;
 }
 
@@ -910,8 +898,7 @@ input[type='radio'].visually-hidden {
   margin-right: 24px;
 }
 
-.button-link:hover,
-.button-link:focus {
+.button-link:hover {
   background-color: #ca2c37;
 }
 
@@ -1157,8 +1144,7 @@ input[type='radio'].visually-hidden {
   height: 143px;
 }
 
-.manufacturers-list-item a:hover,
-.manufacturers-list-item a:focus {
+.manufacturers-list-item a:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -1498,8 +1484,7 @@ input[type='radio'].visually-hidden {
   color: #ffffff;
 }
 
-.site-navigation-item a:hover,
-.site-navigation-item a:focus {
+.site-navigation-item a:hover {
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
@@ -1552,8 +1537,7 @@ input[type='radio'].visually-hidden {
   color: #ffd180;
 }
 
-.footer-offers-list-item a:hover,
-.footer-offers-list-item a:focus {
+.footer-offers-list-item a:hover {
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
@@ -1590,8 +1574,7 @@ input[type='radio'].visually-hidden {
   margin-left: 3px;
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button:hover {
   background-color: #ee3643;
 }
 
@@ -1606,7 +1589,7 @@ input[type='radio'].visually-hidden {
 .facebook-icon {
   position: absolute;
   top: 8px;
-  left: 15px;
+  left: 14px;
   width: 26px;
   height: 26px;
 }
@@ -1614,7 +1597,7 @@ input[type='radio'].visually-hidden {
 .instagram-icon {
   position: absolute;
   top: 8px;
-  left: 12px;
+  left: 10px;
   width: 26px;
   height: 26px;
 }
@@ -1658,8 +1641,7 @@ input[type='radio'].visually-hidden {
   color: #ffd180;
 }
 
-.footer-info a:hover,
-.footer-info a:focus {
+.footer-info a:hover {
   text-decoration: underline;
   text-decoration-color: #ffd180;
   text-decoration-skip-ink: none;
@@ -2058,11 +2040,6 @@ input[type='radio'].visually-hidden {
   fill: black;
 }
 
-.link-up:focus path,
-.link-down:focus path {
-  fill: #ee3643;
-}
-
 .link-up:active path,
 .link-down:active path {
   fill: #ee3643;
@@ -2114,8 +2091,7 @@ input[type='radio'].visually-hidden {
   padding: 9px 30px 9px 32px;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item a:hover {
   border: solid 1px #bdc6ca;
 }
 

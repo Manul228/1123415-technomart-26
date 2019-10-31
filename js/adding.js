@@ -8,7 +8,7 @@ var popupAddingContinue = popupAdding.querySelector('.button-popup-continue');
 productList.addEventListener('click', function(evt) {
   var target = evt.target;
   event.preventDefault();
-  if (target.className === 'bookmark') {
+  if (target.className === 'buy') {
     popupAdding.classList.add("modal-show");
   }
 });
