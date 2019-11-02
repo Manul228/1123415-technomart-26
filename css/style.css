@@ -424,7 +424,8 @@ input[type='radio'].visually-hidden {
 }
 
 .checkout {
-  padding: 13px 23px 12px 20px;
+  margin-top: -1px;
+  padding: 13px 23px 13px 20px;
   background-color: #63a63e;
 }
 
@@ -472,7 +473,8 @@ input[type='radio'].visually-hidden {
 
 .basket-not-empty {
   background-color: #ee3643;
-  padding: 11px 28px 13px 48px;
+  margin-top: -1px;
+  padding: 13px 28px 13px 48px;
 }
 
 .markers:hover,
@@ -861,7 +863,7 @@ input[type='radio'].visually-hidden {
   justify-content: space-between;
   align-items: center;
   height: 90px;
-  background-color: #f9f5f0;
+  background-color: #f2f6f8;
   margin-top: 21px;
 }
 
@@ -1294,6 +1296,7 @@ input[type='radio'].visually-hidden {
 .slider-radio3:checked~.services-menu label[for='radio-3'] {
   color: #32425c;
   background-color: #ffffff;
+  outline: 2px solid #a6c8ff;
 }
 
 .slider-radio1:checked~.slides .slide-delivery {
