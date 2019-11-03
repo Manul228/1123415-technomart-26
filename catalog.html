@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min.normalize.css" rel="stylesheet">
+  <link href="css/min.style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -110,6 +110,7 @@
       <div class="catalog">
         <div class="column-left">
           <section>
+            <h2 class="visually-hidden">Фильтры поиска</h2>
             <form action="https://echo.htmlacademy.ru" method="get">
               <span class="filters-title">Фильтр:</span>
 
@@ -180,6 +181,7 @@
 
         <div class="column-right">
           <section class="sorting-menu">
+            <h3 class="visually-hidden">Параметры сортировки</h3>
             <span class="sorting-title">Сортировка:</span>
             <ul class="sorting-list list-style-reset">
               <li class="sorting-list-item sorting-checked"><a href="#">По цене</a></li>
@@ -437,8 +439,8 @@
   </footer>
 
   <section class="popup popup-adding">
+    <h3 class="visually-hidden">Ваш товар был добавлен</h3>
     <div class="popup-adding-wrap-flex">
-
       <div class="popup-adding-top-flex-wrap">
         <p class="popup-adding-banner">Товар добавлен в корзину!</p>
       </div>
@@ -451,7 +453,7 @@
     </div>
   </section>
 
-  <script src="js/adding-catalog.js"></script>
+  <script src="js/min.adding-catalog.js"></script>
 </body>
 
 </html>

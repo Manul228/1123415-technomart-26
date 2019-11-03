@@ -1,0 +1,1 @@
+var slides=document.querySelectorAll(".slide");function swapSlides(){var e=0;e=(e+slides.length)%slides.length,slides[e].classList.toggle("show")}var slider=document.querySelector(".offers-card-slider");slider.addEventListener("click",function(e){"BUTTON"===e.target.tagName&&swapSlides()});
