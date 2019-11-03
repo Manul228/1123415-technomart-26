@@ -164,8 +164,11 @@ input[type='radio'].visually-hidden {
   color: #ee3643;
   font-size: 16px;
   line-height: 1.44;
+  margin: 0;
+  padding: 0;
   margin-left: 51px;
   margin-top: 50px;
+  width: 198px;
 }
 
 .header-address {
@@ -997,6 +1000,7 @@ input[type='radio'].visually-hidden {
   align-items: center;
   height: 90px;
   background-color: #f9f5f0;
+  margin: 0;
 }
 
 .page-title-wrap {
@@ -1083,8 +1087,9 @@ input[type='radio'].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   padding: 0;
-  margin: 20px 0 0 0;
 }
 
 .hot-list-item {
@@ -1108,6 +1113,8 @@ input[type='radio'].visually-hidden {
   text-align: center;
   border: 1px solid #cccccc;
   padding: 0;
+  margin: 0;
+  margin-top: 3px;
 }
 
 .hot-list-item:hover,
@@ -1446,6 +1453,7 @@ input[type='radio'].visually-hidden {
   color: #000000;
   letter-spacing: 0.05px;
   margin-bottom: -3px;
+  width: 400px;
 }
 
 .services-slider {
@@ -1516,6 +1524,10 @@ input[type='radio'].visually-hidden {
   margin: 0;
   padding: 0;
   margin-left: 80px;
+}
+
+.slide-delivery p {
+  width: 275px;
 }
 
 .slide-guarantee p {
@@ -1606,6 +1618,10 @@ input[type='radio'].visually-hidden {
   width: 520px;
 }
 
+.technomart-description .description-comment:nth-of-type(2) {
+  width: 390px;
+}
+
 .contacts-description {
   width: 300px;
 }
@@ -1630,6 +1646,10 @@ input[type='radio'].visually-hidden {
   text-align: justify;
   color: #000000;
   margin-top: 23px;
+}
+
+.contacts-description .description-comment {
+  width: 180px;
 }
 
 .partners-list {
@@ -1823,6 +1843,7 @@ input[type='radio'].visually-hidden {
   color: #f3f7f9;
   margin-top: -2px;
   margin-left: 3px;
+  width: 325px;
 }
 
 .footer-address a {
@@ -1932,6 +1953,7 @@ input[type='radio'].visually-hidden {
   font-size: 16px;
   line-height: 1;
   padding-top: 23px;
+  width: 228px;
 }
 
 .footer-info {
@@ -1952,7 +1974,7 @@ input[type='radio'].visually-hidden {
 }
 
 .info-mail {
-  margin-left: 125px;
+  margin-left: 123px;
 }
 
 .info-developer {
